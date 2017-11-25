@@ -45,7 +45,7 @@ The graphics, crappy as they were, took a ton of time to build, maintain and tes
 6. Clean up hungarian notation usage/misusage, as well as function naming conventions, etc.  When you're a time-starved one-man shop, it's easy to fall into bad habits, so I did.
 
 #### Things I think are good
-1. The networking code is pretty solid.  It doesn't take much bandwidth, the server-side doesn't gobble CPU cycles.  The SimpleClient/SimpleServer templated classes are probably a bit nuts and had to follow, but over the years of TdG, they never needed much maintenance.
+1. The networking code is pretty solid.  It doesn't take much bandwidth, the server-side doesn't gobble CPU cycles.  The SimpleClient/SimpleServer templated classes are a little hard to follow at first, but over the years of TdG, they never needed much maintenance.
 2. The interface between game logic and the painting is fairly strong, so it should be easy for someone that just wants to cook up a graphics engine to do so without having to muck about with networking.  Check out ConsolePainter::PaintState in the MinimalTdG project.
 3. The StatsStore
 
