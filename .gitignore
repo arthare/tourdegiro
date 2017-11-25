@@ -5,3 +5,4 @@ ipch
 *.pch
 *.sdf
 *.opensdf
+RelWithDebInfo
