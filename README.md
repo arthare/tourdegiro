@@ -74,7 +74,7 @@ Start with the MinimalTdG project, and copy or modify the ConsolePainter class. 
 #### I want to create a new game mode with wacky upgrades or different physics!
 The frame-by-frame physics (including drafting, aero, etc) occur in `TourDeGiroCommon/Player.cpp`, in the function `RunPhysics`.  Note that this function is shared by the game client and the server.  If you modify it on your client but connect to a server without your modifications, you'll end up with a jumpy rider, because you'll keep getting position updates from the server that differ from and override your game client's renderings.
 
-#### I want to make a LAN Server Host and connect to it!
+#### I want to make a server for LAN-party usage!
 This would be a pretty quick modification to MinimalTdG.  You'll see that the first half of `GameEntryPoint` is spent setting up a server, and the second half is a client.  All you need to do is make a binary that doesn't set up the client, and then make another client that connects to the IP address of your server.
 
 #### I want to make my server save data to a database/web service to save data and load maps!
