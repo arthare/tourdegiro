@@ -26,13 +26,13 @@ The graphics, crappy as they were, took a ton of time to build, maintain and tes
 - `ServerLib` - Analagous to GameLib, this is the guts of the TdG server code.  If you want to write your own standalone server binary, you'll want to link to ServerLib and instantiate a `TourServer`, then tell it to start listening for incoming connections.
 - `TourDeGiroCommon` - This is where all shared game logic lives.  The physics calculations, map calculations, etc are all here.  Be careful modifying this stuff without versioning stuff off, because a game client with changed TourDeGiroCommon physics calculations will behave oddly when connected to a different server.  Most important files: `map.cpp` (map representation and construction from GPX files), `player.cpp` (player physics/drafting), `CommStructs.cpp` (network data population)
 - `TourDeGiroData` - This is a badly-named library including all the interfaces and other very-widely-shared definitions used across the app.
-zlib - zlib
+- `zlib` - zlib
 
 
 ### How to build
 1. In the directory you cloned the repo, do `cmake -G Visual Studio 10` (I'm using cmake 2.8.11.2.  There are probably newer versions.  Hopefully they work).  You may have to install cmake first.
 2. Open the generated .SLN
-3. MinimalTdG should build.  If it doesn't, you'll probably have decent luck commenting requesting a fix.  I HATE open-source projects that don't build.
+3. MinimalTdG should build in Visual Studio Community 2015 or Visual C++ 2010 Express.  If it doesn't, you'll probably have decent luck commenting requesting a fix.  I HATE open-source projects that don't build easily.  Sometimes just trying to build again can help.
 
 #### If I Had a Million Man-Hours (aka Todos as of November 2017)
 
@@ -72,16 +72,16 @@ zlib - zlib
 Start with the MinimalTdG project, and copy or modify the ConsolePainter class.  In `ConsolePainter::Painter_Init`, you'll want to load your art assets.  In `ConsolePainter::PaintState`, you'll want to paint the current state of the game (as represented in the `TDGFRAMEPARAMS` object).  Note that there is no guarantee that you'll have the same map or same set of players from frame to frame (players might drop out, the server might change the map, etc).
 
 #### I want to create a new game mode with wacky upgrades or different physics!
-The frame-by-frame physics (including drafting, aero, etc) occur in TourDeGiroCommon/Player.cpp, in the function `RunPhysics`.  Note that this function is shared by the game client and the server.  If you modify it on your client but connect to a server without your modifications, you'll end up with a jumpy rider, because you'll keep getting position updates from the server that differ from and override your game client's renderings.
+The frame-by-frame physics (including drafting, aero, etc) occur in `TourDeGiroCommon/Player.cpp`, in the function `RunPhysics`.  Note that this function is shared by the game client and the server.  If you modify it on your client but connect to a server without your modifications, you'll end up with a jumpy rider, because you'll keep getting position updates from the server that differ from and override your game client's renderings.
 
 #### I want to make a LAN Server Host and connect to it!
 This would be a pretty quick modification to MinimalTdG.  You'll see that the first half of `GameEntryPoint` is spent setting up a server, and the second half is a client.  All you need to do is make a binary that doesn't set up the client, and then make another client that connects to the IP address of your server.
 
 #### I want to make my server save data to a database/web service to save data and load maps!
-There is an interface in `TourDeGiroCommon/StatsStore.h` called StatsStore.  This is the interface the server uses to save and load data from any kind of a back-end.  The MinimalTdG server runs off a NullStatsStore, which basically does as little as possible to let the game start.  The real TdG servers did (still do!) run off an implementation that saves to our MySQL DB.
+There is an interface in `TourDeGiroCommon/StatsStore.h` called StatsStore.  This is the interface the server uses to save and load data from any kind of a back-end.  The MinimalTdG server runs off a NullStatsStore, which basically does as little as possible to let the game start.  The real TdG servers did (still do!) run off a StatsStore implementation that saves to our MySQL DB.
 
-Important DB terms:
-- masterId - this is a representation of the account ID of the player
+Important StatsStore/DB terms:
+- masterId - this is a representation of the account ID of the player.  In Tour de Giro terms, signing up gave you an account ID, under which you could have many rider IDs.
 - playerId - this is the ID of the alias they're currently riding under.  Master account "tourdegiro@tourdegiro.com" might have "art", "eric", or "demo rider" as different rider names.  Think of masterID as a household, and playerId as a individual person in that household.
 - mapId - Every map has a unique ID.
 - raceId - An ID of a single race.  One race can have many race entries.
@@ -107,8 +107,10 @@ However, I can help translate some of the SimpleClient/SimpleServer (...not so s
 Note that SimpleServer and SimpleClient are both very templated because that was a thing I was interested in when I started writing them.  Sorry :-)
 
 ##### SimpleClient Functions
+Note that these are actually generic classes, and upon re-reading this code I think it wouldn't be hard to build a different networked game out of the SimpleServer/SimpleClient templates.  However, the descriptions below are TdG-specific.
+
 - `SimpleClient::SimpleClient_BuildDesc` - This builds a description of your current client.  It includes your master account ID (see database section above), how many local players you have, their names, device types, and a map request (if you have one)
-- `SimpleClient::SimpleClient_BuildState` - This builds a description of your instantaneous game state.  For the most power, this just includes the last detected wattage from all the local players.  There's a couple flags that can be sent as well if your client wants players to be able to move left/right.  See `ACTION_FLAG_LEFT` and friends in `TourDeGiroCommon/CommStructs.h`.  This is called repeatedly and rapidly during gameplay and is not on the main thread, so you need to be both fast and threadsafe.
+- `SimpleClient::SimpleClient_BuildState` - This builds a description of your instantaneous game state.  For the most part, this just includes the last detected wattage from all the local players.  There's a couple flags that can be sent as well if your client wants players to be able to move left/right.  See `ACTION_FLAG_LEFT` and friends in `TourDeGiroCommon/CommStructs.h`.  This is called repeatedly and rapidly during gameplay and is not on the main thread, so you need to be both fast and threadsafe.
 - `SimpleClient::SimpleClient_SetStartupInfo` - Called from the connecting thread, this tells your client "here's the map data we just got from the server.  Deal with it".  This would be a good time to start building 3D models of the map, telling your user the map name and whatnot.
 - `SimpleClient::Connect()` - This does the actual connecting to a SimpleServer.  It gets the underlying game to build a `ClientDesc` with `SimpleClient_BuildDesc` and an initial state (`ClientState` from `SimpleClient_BuildState`), then fires those off to the server via TCP.  If connecting is successful, it sends an initial `ClientState` over TCP (so the server has SOMETHING to go off of in case it takes a while for the client to send another packet), then loads the `ClientStartupInfo` (aka map data) and sends it to the client via `SimpleClient_SetStartupInfo`.  Once the client has been told, the connect thread fires up two threads: one for UDP transmissions created from `SimpleClient_BuildState`, and one for two-way TCP communication.  These threads run the `_SendThreadProc` and `_RecvThreadProc` functions.
 - `SimpleClient::SimpleClient_NotifyGameState` - Called when the TCP receive thread has received a new packet of data from the server.  Each TDGGameState includes a list of players and a list of their new positions, wattages, etc.  So you might get a `TDGGameState` like "playerids {2, 5, 8} now have power {280, 305, 150} and are at positions {1.3km, 1.5km, 0.8km}".  It is up to the client to update its internal state.
