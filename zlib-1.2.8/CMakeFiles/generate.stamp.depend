@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+H:/gitroot/tdg-world/zlib-1.2.8/CMakeLists.txt
+c:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckTypeSize.cmake
+c:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckIncludeFile.cmake
+c:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckFunctionExists.cmake
+c:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckIncludeFile.cmake
+c:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckCSourceCompiles.cmake
+H:/gitroot/tdg-world/zlib-1.2.8/zlib.pc.cmakein
+H:/gitroot/tdg-world/zlib-1.2.8/zconf.h.cmakein

@@ -1,0 +1,11 @@
+
+include_directories($ENV{TDG_HOME}/ArtLib/ $ENV{TDG_HOME}/TourDeGiroCommon)
+add_definitions(-DUNICODE)
+add_definitions(-DUNICODE -D_UNICODE)
+LINK_DIRECTORIES(boost/lib)
+
+set(SOURCES GameAI.cpp GameAI.h)
+add_library (GameAI ${SOURCES})
+Set32Bit(GameAI)
+
+target_link_libraries(GameAI ArtLib TourDeGiroCommon TourDeGiroData)

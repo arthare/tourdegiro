@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+H:/gitroot/tdg-world/libcurl/lib/CMakeLists.txt
+H:/gitroot/tdg-world/libcurl/include/curl/curlbuild.h.cmake
+H:/gitroot/tdg-world/libcurl/lib/curl_config.h.cmake
+H:/gitroot/tdg-world/libcurl/lib/Makefile.inc.cmake

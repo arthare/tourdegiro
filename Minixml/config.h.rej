@@ -1,0 +1,10 @@
+diff a/TourDeGiro/Minixml/config.h b/TourDeGiro/Minixml/config.h	(rejected hunks)
+@@ -52,7 +52,7 @@
+  * To avoid moronic problems like this, we #define the POSIX function
+  * names to the corresponding non-standard Microsoft names.
+  */
+-
++#ifdef _WIN32
+ #define close		_close
+ #define open		_open
+ #define read	        _read

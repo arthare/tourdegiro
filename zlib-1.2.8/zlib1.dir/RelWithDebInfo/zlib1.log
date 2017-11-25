@@ -1,0 +1,19 @@
+﻿  Building Custom Rule H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8/CMakeLists.txt
+  CMake does not need to re-run because H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeFiles\generate.stamp is up-to-date.
+  adler32.c
+  compress.c
+  crc32.c
+  deflate.c
+  gzclose.c
+  gzlib.c
+  gzread.c
+  gzwrite.c
+  inflate.c
+  infback.c
+  inftrees.c
+  inffast.c
+  trees.c
+  uncompr.c
+  zutil.c
+     Creating library h:/gitroot/TourDeGiro/TourDeGiro/RelWithDebInfo/zlib1.lib and object h:/gitroot/TourDeGiro/TourDeGiro/RelWithDebInfo/zlib1.exp
+  zlib1.vcxproj -> h:\gitroot\TourDeGiro\TourDeGiro\RelWithDebInfo\zlib1.dll

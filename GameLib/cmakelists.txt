@@ -1,0 +1,11 @@
+
+include_directories($ENV{TDG_HOME}/ArtLib/ $ENV{TDG_HOME}/TourDeGiroCommon)
+add_definitions(-DUNICODE)
+add_definitions(-DUNICODE -D_UNICODE)
+
+add_library (GameLib Game.h Game.cpp GameShared.h GameShared.cpp LocalStatsStore.h LocalStatsStore.cpp stdafx.cpp)
+Set32Bit(GameLib)
+
+ADD_MSVC_PRECOMPILED_HEADER(GameLib stdafx.h stdafx.cpp)
+
+target_link_libraries(GameLib ArtLib GameAI ServerLib TourDeGiroCommon TourDeGiroData)

@@ -1,0 +1,138 @@
+﻿Build started 10/7/2014 5:16:10 PM.
+     1>Project "H:\gitroot\TourDeGiro\TourDeGiro\libcurl\src\curl.vcxproj" on node 5 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "curl.dir\RelWithDebInfo\curl.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Building Custom Rule H:/gitroot/TourDeGiro/TourDeGiro/libcurl/src/CMakeLists.txt
+         CMake is re-running because H:\gitroot\TourDeGiro\TourDeGiro\libcurl\src\CMakeFiles\generate.stamp is out-of-date.
+           the file 'H:/gitroot/TourDeGiro/TourDeGiro/libcurl/src/Makefile.inc.cmake'
+           is newer than 'H:\gitroot\TourDeGiro\TourDeGiro\libcurl\src\CMakeFiles\generate.stamp.depend'
+           result='-1'
+         -- h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/
+         -- Could NOT find BZip2 (missing:  BZIP2_LIBRARIES BZIP2_INCLUDE_DIR) 
+         -- Could NOT find ZLIB (missing:  ZLIB_LIBRARY ZLIB_INCLUDE_DIR) 
+         CMake Warning at pcre-8.33/CMakeLists.txt:76 (FIND_PACKAGE):
+           By not providing "FindReadline.cmake" in CMAKE_MODULE_PATH this project has
+           asked CMake to find a package configuration file provided by "Readline",
+           but CMake did not find one.
+         
+           Could not find a package configuration file provided by "Readline" with any
+           of the following names:
+         
+             ReadlineConfig.cmake
+             readline-config.cmake
+         
+           Add the installation prefix of "Readline" to CMAKE_PREFIX_PATH or set
+           "Readline_DIR" to a directory containing one of the above files.  If
+           "Readline" provides a separate development package or SDK, be sure it has
+           been installed.
+         
+         
+         CMake Warning at pcre-8.33/CMakeLists.txt:77 (FIND_PACKAGE):
+           By not providing "FindEditline.cmake" in CMAKE_MODULE_PATH this project has
+           asked CMake to find a package configuration file provided by "Editline",
+           but CMake did not find one.
+         
+           Could not find a package configuration file provided by "Editline" with any
+           of the following names:
+         
+             EditlineConfig.cmake
+             editline-config.cmake
+         
+           Add the installation prefix of "Editline" to CMAKE_PREFIX_PATH or set
+           "Editline_DIR" to a directory containing one of the above files.  If
+           "Editline" provides a separate development package or SDK, be sure it has
+           been installed.
+         
+         
+         -- 
+         -- 
+         -- PCRE configuration summary:
+         -- 
+         --   Install prefix .................. : C:/Program Files (x86)/TDG
+         --   C compiler ...................... : C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/bin/cl.exe
+         --   C++ compiler .................... : C:/Program Files (x86)/Microsoft Visual Studio 10.0/VC/bin/cl.exe
+         --   C compiler flags ................ :  /DWIN32 /D_WINDOWS /W3 
+         --   C++ compiler flags .............. :  /DWIN32 /D_WINDOWS /W3 /GR /EHsc 
+         -- 
+         --   Build 8 bit PCRE library ........ : ON
+         --   Build 16 bit PCRE library ....... : OFF
+         --   Build 32 bit PCRE library ....... : OFF
+         --   Build C++ library ............... : OFF
+         --   Enable JIT compiling support .... : OFF
+         --   Enable UTF support .............. : ON
+         --   Unicode properties .............. : ON
+         --   Newline char/sequence ........... : LF
+         --   \R matches only ANYCRLF ......... : OFF
+         --   EBCDIC coding ................... : OFF
+         --   EBCDIC coding with NL=0x25 ...... : OFF
+         --   Rebuild char tables ............. : OFF
+         --   No stack recursion .............. : OFF
+         --   POSIX mem threshold ............. : 10
+         --   Internal link size .............. : 2
+         --   Match limit ..................... : 10000000
+         --   Match limit recursion ........... : MATCH_LIMIT
+         --   Build shared libs ............... : OFF
+         --   Build static libs ............... : ON
+         --   Build pcregrep .................. : OFF
+         --   Enable JIT in pcregrep .......... : ON
+         --   Buffer size for pcregrep ........ : 20480
+         --   Build tests (implies pcretest  .. : OFF
+         --                and pcregrep)
+         --   Link pcregrep with libz ......... : Library not found
+         --   Link pcregrep with libbz2 ....... : Library not found
+         --   Link pcretest with libeditline .. : Library not found
+         --   Link pcretest with libreadline .. : Library not found
+         --   Support Valgrind .................: OFF
+         --   Support coverage .................: OFF
+         -- 
+         -- curl version=[7.31.0]
+         -- Could NOT find OpenSSL, try to set the path to OpenSSL root folder in the system variable OPENSSL_ROOT_DIR (missing:  OPENSSL_LIBRARIES OPENSSL_INCLUDE_DIR) 
+         -- LDAP_H not found CURL_DISABLE_LDAP set ON
+         CMake Warning (dev) at libcurl/tests/CMakeLists.txt:1 (add_subdirectory):
+           The source directory
+         
+             H:/gitroot/TourDeGiro/TourDeGiro/libcurl/tests/libtest
+         
+           does not contain a CMakeLists.txt file.
+         
+           CMake does not support this case but it used to work accidentally and is
+           being allowed for compatibility.
+         
+           Policy CMP0014 is not set: Input directories must have CMakeLists.txt.  Run
+           "cmake --help-policy CMP0014" for policy details.  Use the cmake_policy
+           command to set the policy and suppress this warning.
+         This warning is for project developers.  Use -Wno-dev to suppress it.
+         
+         CMake Warning (dev) at libcurl/tests/CMakeLists.txt:2 (add_subdirectory):
+           The source directory
+         
+             H:/gitroot/TourDeGiro/TourDeGiro/libcurl/tests/server
+         
+           does not contain a CMakeLists.txt file.
+         
+           CMake does not support this case but it used to work accidentally and is
+           being allowed for compatibility.
+         
+           Policy CMP0014 is not set: Input directories must have CMakeLists.txt.  Run
+           "cmake --help-policy CMP0014" for policy details.  Use the cmake_policy
+           command to set the policy and suppress this warning.
+         This warning is for project developers.  Use -Wno-dev to suppress it.
+         
+         -- Configuring done
+         CMake Error at TrainingTester/CMakeLists.txt:20 (add_executable):
+           Cannot find source file:
+         
+             TDGTerrainViewer.cpp
+         
+           Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
+           .hxx .in .txx
+         
+         
+         -- Build files have been written to: H:/gitroot/TourDeGiro/TourDeGiro
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets(151,5): error MSB6006: "cmd.exe" exited with code 1.
+     1>Done Building Project "H:\gitroot\TourDeGiro\TourDeGiro\libcurl\src\curl.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.70

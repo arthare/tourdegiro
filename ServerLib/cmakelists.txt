@@ -1,0 +1,13 @@
+
+include_directories(boost $ENV{TDG_HOME}/ArtLib/ $ENV{TDG_HOME}/TourDeGiroCommon)
+add_definitions(-DUNICODE)
+add_definitions(-DUNICODE -D_UNICODE)
+LINK_DIRECTORIES(boost/lib)
+
+set(SOURCES stdafx.h stdafx.cpp SimpleClient.h SimpleClient.cpp SimpleServer.h SimpleServer.cpp ThreadedResultsSaver.h ThreadedResultsSaver.cpp TourServer.h TourServer.cpp)
+add_library (ServerLib ${SOURCES})
+Set32Bit(ServerLib)
+
+ADD_MSVC_PRECOMPILED_HEADER(ServerLib stdafx.h stdafx.cpp)
+
+target_link_libraries(ServerLib ArtLib TourDeGiroCommon TourDeGiroData)

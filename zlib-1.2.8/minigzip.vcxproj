@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{7BFF3D43-B2D6-4FBB-8685-FB8BE15113D8}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>minigzip</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">h:\gitroot\TourDeGiro\TourDeGiro\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">minigzip.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">minigzip</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">h:\gitroot\TourDeGiro\TourDeGiro\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">minigzip.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">minigzip</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">h:\gitroot\TourDeGiro\TourDeGiro\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">minigzip.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">minigzip</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">h:\gitroot\TourDeGiro\TourDeGiro\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">minigzip.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">minigzip</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm180 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>h:/gitroot/tourdegiro/tourdegiro/ant2013/lib;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/include/OGRE;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost;h:/gitroot/tourdegiro/tourdegiro/OgreMain/include;H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8;H:/gitroot/TourDeGiro/TourDeGiro;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4005;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;BOOST_DISABLE_ASSERTS;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>h:/gitroot/TourDeGiro/TourDeGiro/Debug/minigzip.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;BOOST_DISABLE_ASSERTS;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>h:/gitroot/tourdegiro/tourdegiro/ant2013/lib;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/include/OGRE;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost;h:/gitroot/tourdegiro/tourdegiro/OgreMain/include;H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8;H:/gitroot/TourDeGiro/TourDeGiro;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>h:/gitroot/tourdegiro/tourdegiro/ant2013/lib;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/include/OGRE;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost;h:/gitroot/tourdegiro/tourdegiro/OgreMain/include;H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8;H:/gitroot/TourDeGiro/TourDeGiro;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>h:/gitroot/tourdegiro/tourdegiro/lib;h:/gitroot/tourdegiro/tourdegiro/lib/$(Configuration);;h:/gitroot/tourdegiro/tourdegiro/zlib-1.2.8/lib;h:/gitroot/tourdegiro/tourdegiro/zlib-1.2.8/lib/$(Configuration);;h:/gitroot/tourdegiro/tourdegiro/freetype/lib;h:/gitroot/tourdegiro/tourdegiro/freetype/lib/$(Configuration);;h:/gitroot/tourdegiro/tourdegiro/FreeImage/Dist;h:/gitroot/tourdegiro/tourdegiro/FreeImage/Dist/$(Configuration);;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost/lib;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>h:/gitroot/TourDeGiro/TourDeGiro/Debug/minigzip.lib</ImportLibrary>
+      <ProgramDataBaseFile>h:/gitroot/TourDeGiro/TourDeGiro/Debug/minigzip.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm180 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>h:/gitroot/tourdegiro/tourdegiro/ant2013/lib;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/include/OGRE;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost;h:/gitroot/tourdegiro/tourdegiro/OgreMain/include;H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8;H:/gitroot/TourDeGiro/TourDeGiro;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4005;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;BOOST_DISABLE_ASSERTS;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>h:/gitroot/TourDeGiro/TourDeGiro/Release/minigzip.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;BOOST_DISABLE_ASSERTS;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>h:/gitroot/tourdegiro/tourdegiro/ant2013/lib;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/include/OGRE;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost;h:/gitroot/tourdegiro/tourdegiro/OgreMain/include;H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8;H:/gitroot/TourDeGiro/TourDeGiro;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>h:/gitroot/tourdegiro/tourdegiro/ant2013/lib;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/include/OGRE;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost;h:/gitroot/tourdegiro/tourdegiro/OgreMain/include;H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8;H:/gitroot/TourDeGiro/TourDeGiro;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>h:/gitroot/tourdegiro/tourdegiro/lib;h:/gitroot/tourdegiro/tourdegiro/lib/$(Configuration);;h:/gitroot/tourdegiro/tourdegiro/zlib-1.2.8/lib;h:/gitroot/tourdegiro/tourdegiro/zlib-1.2.8/lib/$(Configuration);;h:/gitroot/tourdegiro/tourdegiro/freetype/lib;h:/gitroot/tourdegiro/tourdegiro/freetype/lib/$(Configuration);;h:/gitroot/tourdegiro/tourdegiro/FreeImage/Dist;h:/gitroot/tourdegiro/tourdegiro/FreeImage/Dist/$(Configuration);;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost/lib;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>h:/gitroot/TourDeGiro/TourDeGiro/Release/minigzip.lib</ImportLibrary>
+      <ProgramDataBaseFile>h:/gitroot/TourDeGiro/TourDeGiro/Release/minigzip.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm180 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>h:/gitroot/tourdegiro/tourdegiro/ant2013/lib;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/include/OGRE;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost;h:/gitroot/tourdegiro/tourdegiro/OgreMain/include;H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8;H:/gitroot/TourDeGiro/TourDeGiro;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4005;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;BOOST_DISABLE_ASSERTS;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>h:/gitroot/TourDeGiro/TourDeGiro/MinSizeRel/minigzip.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;BOOST_DISABLE_ASSERTS;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>h:/gitroot/tourdegiro/tourdegiro/ant2013/lib;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/include/OGRE;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost;h:/gitroot/tourdegiro/tourdegiro/OgreMain/include;H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8;H:/gitroot/TourDeGiro/TourDeGiro;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>h:/gitroot/tourdegiro/tourdegiro/ant2013/lib;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/include/OGRE;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost;h:/gitroot/tourdegiro/tourdegiro/OgreMain/include;H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8;H:/gitroot/TourDeGiro/TourDeGiro;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>h:/gitroot/tourdegiro/tourdegiro/lib;h:/gitroot/tourdegiro/tourdegiro/lib/$(Configuration);;h:/gitroot/tourdegiro/tourdegiro/zlib-1.2.8/lib;h:/gitroot/tourdegiro/tourdegiro/zlib-1.2.8/lib/$(Configuration);;h:/gitroot/tourdegiro/tourdegiro/freetype/lib;h:/gitroot/tourdegiro/tourdegiro/freetype/lib/$(Configuration);;h:/gitroot/tourdegiro/tourdegiro/FreeImage/Dist;h:/gitroot/tourdegiro/tourdegiro/FreeImage/Dist/$(Configuration);;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost/lib;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>h:/gitroot/TourDeGiro/TourDeGiro/MinSizeRel/minigzip.lib</ImportLibrary>
+      <ProgramDataBaseFile>h:/gitroot/TourDeGiro/TourDeGiro/MinSizeRel/minigzip.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm180 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>h:/gitroot/tourdegiro/tourdegiro/ant2013/lib;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/include/OGRE;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost;h:/gitroot/tourdegiro/tourdegiro/OgreMain/include;H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8;H:/gitroot/TourDeGiro/TourDeGiro;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4005;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;BOOST_DISABLE_ASSERTS;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>h:/gitroot/TourDeGiro/TourDeGiro/RelWithDebInfo/minigzip.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;BOOST_DISABLE_ASSERTS;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>h:/gitroot/tourdegiro/tourdegiro/ant2013/lib;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/include/OGRE;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost;h:/gitroot/tourdegiro/tourdegiro/OgreMain/include;H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8;H:/gitroot/TourDeGiro/TourDeGiro;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>h:/gitroot/tourdegiro/tourdegiro/ant2013/lib;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/include/OGRE;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost;h:/gitroot/tourdegiro/tourdegiro/OgreMain/include;H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8;H:/gitroot/TourDeGiro/TourDeGiro;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>h:/gitroot/tourdegiro/tourdegiro/lib;h:/gitroot/tourdegiro/tourdegiro/lib/$(Configuration);;h:/gitroot/tourdegiro/tourdegiro/zlib-1.2.8/lib;h:/gitroot/tourdegiro/tourdegiro/zlib-1.2.8/lib/$(Configuration);;h:/gitroot/tourdegiro/tourdegiro/freetype/lib;h:/gitroot/tourdegiro/tourdegiro/freetype/lib/$(Configuration);;h:/gitroot/tourdegiro/tourdegiro/FreeImage/Dist;h:/gitroot/tourdegiro/tourdegiro/FreeImage/Dist/$(Configuration);;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost/lib;h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>h:/gitroot/TourDeGiro/TourDeGiro/RelWithDebInfo/minigzip.lib</ImportLibrary>
+      <ProgramDataBaseFile>h:/gitroot/TourDeGiro/TourDeGiro/RelWithDebInfo/minigzip.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"c:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HH:/gitroot/TourDeGiro/TourDeGiro -BH:/gitroot/TourDeGiro/TourDeGiro --check-stamp-file H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8/CMakeLists.txt;H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeLists.txt;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckFunctionExists.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckCSourceCompiles.cmake;H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\zlib.pc.cmakein;H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\zconf.h.cmakein;H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"c:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HH:/gitroot/TourDeGiro/TourDeGiro -BH:/gitroot/TourDeGiro/TourDeGiro --check-stamp-file H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8/CMakeLists.txt;H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeLists.txt;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckFunctionExists.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckCSourceCompiles.cmake;H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\zlib.pc.cmakein;H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\zconf.h.cmakein;H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"c:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HH:/gitroot/TourDeGiro/TourDeGiro -BH:/gitroot/TourDeGiro/TourDeGiro --check-stamp-file H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8/CMakeLists.txt;H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeLists.txt;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckFunctionExists.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckCSourceCompiles.cmake;H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\zlib.pc.cmakein;H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\zconf.h.cmakein;H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"c:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HH:/gitroot/TourDeGiro/TourDeGiro -BH:/gitroot/TourDeGiro/TourDeGiro --check-stamp-file H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8/CMakeLists.txt;H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeLists.txt;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckTypeSize.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckFunctionExists.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFile.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckCSourceCompiles.cmake;H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\zlib.pc.cmakein;H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\zconf.h.cmakein;H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test\minigzip.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="H:/gitroot/TourDeGiro/TourDeGiro/ZERO_CHECK.vcxproj">
+      <Project>05C93907-8740-4787-8C8F-CFAB83F3E999</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

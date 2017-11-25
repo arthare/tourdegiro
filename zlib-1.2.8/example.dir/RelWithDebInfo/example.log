@@ -1,0 +1,21 @@
+﻿Build started 10/7/2014 5:16:09 PM.
+     1>Project "H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\example.vcxproj" on node 5 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "example.dir\RelWithDebInfo\example.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Building Custom Rule H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8/CMakeLists.txt
+         CMake does not need to re-run because H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Ih:/gitroot/tourdegiro/tourdegiro/ant2013/lib /I"h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/include/OGRE" /I"h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost" /Ih:/gitroot/tourdegiro/tourdegiro/OgreMain/include /I"H:/gitroot/TourDeGiro/TourDeGiro/zlib-1.2.8" /IH:/gitroot/TourDeGiro/TourDeGiro /Zi /nologo /W0 /WX- /MP /O2 /Ob1 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D _CRT_SECURE_NO_WARNINGS /D BOOST_DISABLE_ASSERTS /D NO_FSEEKO /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"example.dir\RelWithDebInfo\\" /Fd"h:/gitroot/TourDeGiro/TourDeGiro/RelWithDebInfo/example.pdb" /Gd /TC /wd4005 /wd4996 /analyze- /errorReport:prompt test\example.c  /Zm180 
+         example.c
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"example.dir\RelWithDebInfo\example.exe.embed.manifest.res" example.dir\RelWithDebInfo\example_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"h:\gitroot\TourDeGiro\TourDeGiro\RelWithDebInfo\example.exe" /INCREMENTAL /NOLOGO /LIBPATH:h:/gitroot/tourdegiro/tourdegiro/lib /LIBPATH:h:/gitroot/tourdegiro/tourdegiro/lib/RelWithDebInfo /LIBPATH:"h:/gitroot/tourdegiro/tourdegiro/zlib-1.2.8/lib" /LIBPATH:"h:/gitroot/tourdegiro/tourdegiro/zlib-1.2.8/lib/RelWithDebInfo" /LIBPATH:h:/gitroot/tourdegiro/tourdegiro/freetype/lib /LIBPATH:h:/gitroot/tourdegiro/tourdegiro/freetype/lib/RelWithDebInfo /LIBPATH:h:/gitroot/tourdegiro/tourdegiro/FreeImage/Dist /LIBPATH:h:/gitroot/tourdegiro/tourdegiro/FreeImage/Dist/RelWithDebInfo /LIBPATH:"h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost/lib" /LIBPATH:"h:/gitroot/tourdegiro/tourdegiro/ogre_sdk/OgreSDK_MinGW_v1-8-1/boost/lib/RelWithDebInfo" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib zlib.lib /MANIFEST /ManifestFile:"example.dir\RelWithDebInfo\example.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"h:/gitroot/TourDeGiro/TourDeGiro/RelWithDebInfo/example.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"h:/gitroot/TourDeGiro/TourDeGiro/RelWithDebInfo/example.lib" /MACHINE:X86 example.dir\RelWithDebInfo\example.exe.embed.manifest.res
+         example.dir\RelWithDebInfo\example.obj  /machine:X86 /debug 
+     1>LINK : fatal error LNK1104: cannot open file 'zlib.lib'
+     1>Done Building Project "H:\gitroot\TourDeGiro\TourDeGiro\zlib-1.2.8\example.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.76

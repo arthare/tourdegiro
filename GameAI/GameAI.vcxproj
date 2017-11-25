@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{2F67151D-C0DA-44A3-96FA-44EBE3DC4D86}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>GameAI</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">H:\gitroot\tdg-world\build-archive-output\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GameAI.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GameAI</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">H:\gitroot\tdg-world\build-archive-output\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GameAI.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GameAI</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm180 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>H:/gitroot/tdg-world/boost;H:/gitroot/tdg-world/ArtLib;H:/gitroot/tdg-world/TourDeGiroCommon;H:/gitroot/tdg-world/TourDeGiroData;H:/gitroot/tdg-world/ServerLib;H:/gitroot/tdg-world/GameLib;h:/gitroot/tourdegiro/tourdegiro/ArtLib;h:/gitroot/tourdegiro/tourdegiro/TourDeGiroCommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4005;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;BOOST_DISABLE_ASSERTS;UNICODE;UNICODE;_UNICODE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>H:/gitroot/tdg-world/build-archive-output/Debug/GameAI.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;BOOST_DISABLE_ASSERTS;UNICODE;UNICODE;_UNICODE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:/gitroot/tdg-world/boost;H:/gitroot/tdg-world/ArtLib;H:/gitroot/tdg-world/TourDeGiroCommon;H:/gitroot/tdg-world/TourDeGiroData;H:/gitroot/tdg-world/ServerLib;H:/gitroot/tdg-world/GameLib;h:/gitroot/tourdegiro/tourdegiro/ArtLib;h:/gitroot/tourdegiro/tourdegiro/TourDeGiroCommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:/gitroot/tdg-world/boost;H:/gitroot/tdg-world/ArtLib;H:/gitroot/tdg-world/TourDeGiroCommon;H:/gitroot/tdg-world/TourDeGiroData;H:/gitroot/tdg-world/ServerLib;H:/gitroot/tdg-world/GameLib;h:/gitroot/tourdegiro/tourdegiro/ArtLib;h:/gitroot/tourdegiro/tourdegiro/TourDeGiroCommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm180 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>H:/gitroot/tdg-world/boost;H:/gitroot/tdg-world/ArtLib;H:/gitroot/tdg-world/TourDeGiroCommon;H:/gitroot/tdg-world/TourDeGiroData;H:/gitroot/tdg-world/ServerLib;H:/gitroot/tdg-world/GameLib;h:/gitroot/tourdegiro/tourdegiro/ArtLib;h:/gitroot/tourdegiro/tourdegiro/TourDeGiroCommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;BOOST_DISABLE_ASSERTS;UNICODE;UNICODE;_UNICODE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>H:/gitroot/tdg-world/build-archive-output/Release/GameAI.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;BOOST_DISABLE_ASSERTS;UNICODE;UNICODE;_UNICODE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:/gitroot/tdg-world/boost;H:/gitroot/tdg-world/ArtLib;H:/gitroot/tdg-world/TourDeGiroCommon;H:/gitroot/tdg-world/TourDeGiroData;H:/gitroot/tdg-world/ServerLib;H:/gitroot/tdg-world/GameLib;h:/gitroot/tourdegiro/tourdegiro/ArtLib;h:/gitroot/tourdegiro/tourdegiro/TourDeGiroCommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:/gitroot/tdg-world/boost;H:/gitroot/tdg-world/ArtLib;H:/gitroot/tdg-world/TourDeGiroCommon;H:/gitroot/tdg-world/TourDeGiroData;H:/gitroot/tdg-world/ServerLib;H:/gitroot/tdg-world/GameLib;h:/gitroot/tourdegiro/tourdegiro/ArtLib;h:/gitroot/tourdegiro/tourdegiro/TourDeGiroCommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="cmakelists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule H:/gitroot/tdg-world/GameAI/cmakelists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"c:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HH:/gitroot/tdg-world -BH:/gitroot/tdg-world --check-stamp-file H:\gitroot\tdg-world\GameAI\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">H:/gitroot/tdg-world/GameAI/cmakelists.txt;H:\gitroot\tdg-world\GameAI\CMakeLists.txt;H:\gitroot\tdg-world\GameAI\cmakelists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">H:\gitroot\tdg-world\GameAI\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule H:/gitroot/tdg-world/GameAI/cmakelists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"c:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HH:/gitroot/tdg-world -BH:/gitroot/tdg-world --check-stamp-file H:\gitroot\tdg-world\GameAI\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">H:/gitroot/tdg-world/GameAI/cmakelists.txt;H:\gitroot\tdg-world\GameAI\CMakeLists.txt;H:\gitroot\tdg-world\GameAI\cmakelists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">H:\gitroot\tdg-world\GameAI\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameAI.h" />
+    <ClCompile Include="GameAI.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="H:/gitroot/tdg-world/ArtLib/ArtLib.vcxproj">
+      <Project>129E56B3-93DC-4473-AA13-B58B5BB8777B</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/TourDeGiroCommon/TourDeGiroCommon.vcxproj">
+      <Project>3ABAEE22-FBEE-41A4-AAF3-7DEA326FB5FA</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/TourDeGiroData/TourDeGiroData.vcxproj">
+      <Project>EB4BE9E7-A735-4A73-91D4-5A44F5107A47</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/ZERO_CHECK.vcxproj">
+      <Project>AA551AD4-3C65-436F-9943-79858913E80D</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/libcurl/lib/libcurl.vcxproj">
+      <Project>3D6D9055-B651-4BDF-939D-92DE1CAAA4D3</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

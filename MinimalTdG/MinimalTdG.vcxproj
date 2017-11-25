@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{84E1649D-8D72-4E19-9EDE-A560F5E3EA41}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>MinimalTdG</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">H:\gitroot\tdg-world\build-runtime-output\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MinimalTdG.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MinimalTdG</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">H:\gitroot\tdg-world\build-runtime-output\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MinimalTdG.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MinimalTdG</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm180 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>H:/gitroot/tdg-world/boost;H:/gitroot/tdg-world/ArtLib;H:/gitroot/tdg-world/TourDeGiroCommon;H:/gitroot/tdg-world/TourDeGiroData;H:/gitroot/tdg-world/ServerLib;H:/gitroot/tdg-world/GameLib;H:/gitroot/tdg-world/MinimalTdG/${CMAKE_SOURCE_DIR;H:/gitroot/tdg-world/MinimalTdG/}/TourDeGiroData;H:/gitroot/tdg-world/MinimalTdG/}/ArtLib;H:/gitroot/tdg-world/MinimalTdG/}/GameLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4005;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;BOOST_DISABLE_ASSERTS;UNICODE;_UNICODE;CURL_STATICLIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>H:/gitroot/tdg-world/build-runtime-output/Debug/MinimalTdG.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;BOOST_DISABLE_ASSERTS;UNICODE;_UNICODE;CURL_STATICLIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:/gitroot/tdg-world/boost;H:/gitroot/tdg-world/ArtLib;H:/gitroot/tdg-world/TourDeGiroCommon;H:/gitroot/tdg-world/TourDeGiroData;H:/gitroot/tdg-world/ServerLib;H:/gitroot/tdg-world/GameLib;H:/gitroot/tdg-world/MinimalTdG/${CMAKE_SOURCE_DIR;H:/gitroot/tdg-world/MinimalTdG/}/TourDeGiroData;H:/gitroot/tdg-world/MinimalTdG/}/ArtLib;H:/gitroot/tdg-world/MinimalTdG/}/GameLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:/gitroot/tdg-world/boost;H:/gitroot/tdg-world/ArtLib;H:/gitroot/tdg-world/TourDeGiroCommon;H:/gitroot/tdg-world/TourDeGiroData;H:/gitroot/tdg-world/ServerLib;H:/gitroot/tdg-world/GameLib;H:/gitroot/tdg-world/MinimalTdG/${CMAKE_SOURCE_DIR;H:/gitroot/tdg-world/MinimalTdG/}/TourDeGiroData;H:/gitroot/tdg-world/MinimalTdG/}/ArtLib;H:/gitroot/tdg-world/MinimalTdG/}/GameLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\build-archive-output\Debug\ArtLib.lib;..\build-archive-output\Debug\GameLib.lib;..\build-archive-output\Debug\ServerLib.lib;..\build-archive-output\Debug\GameAI.lib;..\build-archive-output\Debug\TourDeGiroCommon.lib;..\build-archive-output\Debug\minixml.lib;libboost_thread-vc100-mt-1_49.lib;libboost_filesystem-vc100-mt-1_49.lib;libboost_system-vc100-mt-1_49.lib;..\build-archive-output\Debug\ArtLib.lib;..\build-archive-output\Debug\..\libcurl_imp.lib;winmm.lib;ws2_32.lib;winmm.lib;ws2_32.lib;..\build-archive-output\Debug\zlib1d.lib;psapi.lib;..\build-archive-output\Debug\TourDeGiroData.lib;..\build-archive-output\Debug\nedmalloc.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>H:/gitroot/tdg-world/boost/lib;H:/gitroot/tdg-world/boost/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>H:/gitroot/tdg-world/build-archive-output/Debug/MinimalTdG.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/gitroot/tdg-world/build-runtime-output/Debug/MinimalTdG.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm180 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>H:/gitroot/tdg-world/boost;H:/gitroot/tdg-world/ArtLib;H:/gitroot/tdg-world/TourDeGiroCommon;H:/gitroot/tdg-world/TourDeGiroData;H:/gitroot/tdg-world/ServerLib;H:/gitroot/tdg-world/GameLib;H:/gitroot/tdg-world/MinimalTdG/${CMAKE_SOURCE_DIR;H:/gitroot/tdg-world/MinimalTdG/}/TourDeGiroData;H:/gitroot/tdg-world/MinimalTdG/}/ArtLib;H:/gitroot/tdg-world/MinimalTdG/}/GameLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;BOOST_DISABLE_ASSERTS;UNICODE;_UNICODE;CURL_STATICLIB;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>H:/gitroot/tdg-world/build-runtime-output/Release/MinimalTdG.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;BOOST_DISABLE_ASSERTS;UNICODE;_UNICODE;CURL_STATICLIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:/gitroot/tdg-world/boost;H:/gitroot/tdg-world/ArtLib;H:/gitroot/tdg-world/TourDeGiroCommon;H:/gitroot/tdg-world/TourDeGiroData;H:/gitroot/tdg-world/ServerLib;H:/gitroot/tdg-world/GameLib;H:/gitroot/tdg-world/MinimalTdG/${CMAKE_SOURCE_DIR;H:/gitroot/tdg-world/MinimalTdG/}/TourDeGiroData;H:/gitroot/tdg-world/MinimalTdG/}/ArtLib;H:/gitroot/tdg-world/MinimalTdG/}/GameLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:/gitroot/tdg-world/boost;H:/gitroot/tdg-world/ArtLib;H:/gitroot/tdg-world/TourDeGiroCommon;H:/gitroot/tdg-world/TourDeGiroData;H:/gitroot/tdg-world/ServerLib;H:/gitroot/tdg-world/GameLib;H:/gitroot/tdg-world/MinimalTdG/${CMAKE_SOURCE_DIR;H:/gitroot/tdg-world/MinimalTdG/}/TourDeGiroData;H:/gitroot/tdg-world/MinimalTdG/}/ArtLib;H:/gitroot/tdg-world/MinimalTdG/}/GameLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\build-archive-output\Release\ArtLib.lib;..\build-archive-output\Release\GameLib.lib;..\build-archive-output\Release\ServerLib.lib;..\build-archive-output\Release\GameAI.lib;..\build-archive-output\Release\TourDeGiroCommon.lib;..\build-archive-output\Release\minixml.lib;libboost_thread-vc100-mt-1_49.lib;libboost_filesystem-vc100-mt-1_49.lib;libboost_system-vc100-mt-1_49.lib;..\build-archive-output\Release\ArtLib.lib;..\build-archive-output\Release\..\libcurl_imp.lib;winmm.lib;ws2_32.lib;winmm.lib;ws2_32.lib;..\build-archive-output\Release\zlib1.lib;psapi.lib;..\build-archive-output\Release\TourDeGiroData.lib;..\build-archive-output\Release\nedmalloc.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>H:/gitroot/tdg-world/boost/lib;H:/gitroot/tdg-world/boost/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>H:/gitroot/tdg-world/build-archive-output/Release/MinimalTdG.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/gitroot/tdg-world/build-runtime-output/Release/MinimalTdG.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule H:/gitroot/tdg-world/MinimalTdG/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"c:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HH:/gitroot/tdg-world -BH:/gitroot/tdg-world --check-stamp-file H:\gitroot\tdg-world\MinimalTdG\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">H:/gitroot/tdg-world/MinimalTdG/CMakeLists.txt;H:\gitroot\tdg-world\MinimalTdG\CMakeLists.txt;H:\gitroot\tdg-world\MinimalTdG\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">H:\gitroot\tdg-world\MinimalTdG\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule H:/gitroot/tdg-world/MinimalTdG/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"c:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HH:/gitroot/tdg-world -BH:/gitroot/tdg-world --check-stamp-file H:\gitroot\tdg-world\MinimalTdG\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">H:/gitroot/tdg-world/MinimalTdG/CMakeLists.txt;H:\gitroot\tdg-world\MinimalTdG\CMakeLists.txt;H:\gitroot\tdg-world\MinimalTdG\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">H:\gitroot\tdg-world\MinimalTdG\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp"  />
+    <ClCompile Include="stdafx.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="H:/gitroot/tdg-world/ArtLib/ArtLib.vcxproj">
+      <Project>129E56B3-93DC-4473-AA13-B58B5BB8777B</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/GameAI/GameAI.vcxproj">
+      <Project>2F67151D-C0DA-44A3-96FA-44EBE3DC4D86</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/GameLib/GameLib.vcxproj">
+      <Project>7735E96D-AEA2-4F5B-86BB-33D5274950D9</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/ServerLib/ServerLib.vcxproj">
+      <Project>51917743-BC31-4E08-B11A-2D5EC34D2372</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/TourDeGiroCommon/TourDeGiroCommon.vcxproj">
+      <Project>3ABAEE22-FBEE-41A4-AAF3-7DEA326FB5FA</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/TourDeGiroData/TourDeGiroData.vcxproj">
+      <Project>EB4BE9E7-A735-4A73-91D4-5A44F5107A47</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/ZERO_CHECK.vcxproj">
+      <Project>AA551AD4-3C65-436F-9943-79858913E80D</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/libcurl/lib/libcurl.vcxproj">
+      <Project>3D6D9055-B651-4BDF-939D-92DE1CAAA4D3</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/Minixml/minixml.vcxproj">
+      <Project>DEAA6690-A8B5-4CE6-9B88-3234193347D9</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/nedmalloc/nedmalloc.vcxproj">
+      <Project>84BD9781-7A93-488E-B152-3F1C9B58F491</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

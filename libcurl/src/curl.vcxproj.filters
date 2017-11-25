@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="tool_binmode.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_bname.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_cb_dbg.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_cb_hdr.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_cb_prg.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_cb_rea.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_cb_see.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_cb_wrt.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_cfgable.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_convert.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_dirhie.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_doswin.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_easysrc.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_formparse.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_getparam.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_getpass.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_help.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_helpers.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_homedir.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_hugehelp.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_libinfo.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_main.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_metalink.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_mfiles.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_msgs.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_operate.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_operhlp.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_panykey.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_paramhlp.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_parsecfg.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_setopt.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_sleep.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_urlglob.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_util.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_vms.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_writeenv.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_writeout.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_xattr.c">
+      <Filter>cURL source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\strtoofft.c">
+      <Filter>cURLX source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\strdup.c">
+      <Filter>cURLX source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\rawstr.c">
+      <Filter>cURLX source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\nonblock.c">
+      <Filter>cURLX source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tool_binmode.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_bname.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_cb_dbg.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_cb_hdr.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_cb_prg.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_cb_rea.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_cb_see.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_cb_wrt.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_cfgable.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_convert.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_dirhie.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_doswin.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_easysrc.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_formparse.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_getparam.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_getpass.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_help.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_helpers.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_homedir.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_hugehelp.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_libinfo.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_main.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_metalink.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_mfiles.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_msgs.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_operate.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_operhlp.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_panykey.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_paramhlp.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_parsecfg.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_sdecls.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_setopt.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_setup.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_sleep.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_urlglob.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_util.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_version.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_vms.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_writeenv.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_writeout.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_xattr.h">
+      <Filter>cURL header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="cURLX source files">
+      <UniqueIdentifier>{D6E9D086-99A5-40CB-BE0D-A54A5850FB96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cURL source files">
+      <UniqueIdentifier>{1E982AC8-C635-48A4-B4C4-3748BC2F6A02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cURL header files">
+      <UniqueIdentifier>{3D533196-A482-4793-978D-FB203FA3D991}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

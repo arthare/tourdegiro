@@ -1,0 +1,20 @@
+# CMake generation dependency list for this directory.
+H:/gitroot/tdg-world/libcurl/CMakeLists.txt
+H:/gitroot/tdg-world/libcurl/cmake/Utilities.cmake
+c:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckFunctionExists.cmake
+c:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckIncludeFile.cmake
+c:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckIncludeFiles.cmake
+c:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckLibraryExists.cmake
+c:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckSymbolExists.cmake
+c:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckTypeSize.cmake
+c:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CheckIncludeFile.cmake
+H:/gitroot/tdg-world/libcurl/cmake/Platforms/WindowsCache.cmake
+H:/gitroot/tdg-world/libcurl/cmake/FindOpenSSL.cmake
+c:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindOpenSSL.cmake
+c:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/SelectLibraryConfigurations.cmake
+c:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageHandleStandardArgs.cmake
+c:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageMessage.cmake
+c:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeParseArguments.cmake
+H:/gitroot/tdg-world/libcurl/cmake/OtherTests.cmake
+H:/gitroot/tdg-world/libcurl/cmake/CurlCheckCSourceCompiles.cmake
+H:/gitroot/tdg-world/libcurl/cmake/CurlCheckCSourceRuns.cmake

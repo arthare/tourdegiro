@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{25423928-D265-4EA8-805F-1805D747DAF1}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>H:/gitroot/tdg-world/boost;H:/gitroot/tdg-world/ArtLib;H:/gitroot/tdg-world/TourDeGiroCommon;H:/gitroot/tdg-world/TourDeGiroData;H:/gitroot/tdg-world/ServerLib;H:/gitroot/tdg-world/GameLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>H:/gitroot/tdg-world/boost;H:/gitroot/tdg-world/ArtLib;H:/gitroot/tdg-world/TourDeGiroCommon;H:/gitroot/tdg-world/TourDeGiroData;H:/gitroot/tdg-world/ServerLib;H:/gitroot/tdg-world/GameLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule H:/gitroot/tdg-world/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"c:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HH:/gitroot/tdg-world -BH:/gitroot/tdg-world --check-stamp-file H:\gitroot\tdg-world\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">H:/gitroot/tdg-world/CMakeLists.txt;H:\gitroot\tdg-world\CMakeLists.txt;H:\gitroot\tdg-world\CMakeFiles\2.8.11.2\CMakeSystem.cmake;H:\gitroot\tdg-world\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;H:\gitroot\tdg-world\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;H:\gitroot\tdg-world\CMakeFiles\2.8.11.2\CMakeRCCompiler.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;H:\gitroot\tdg-world\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">H:\gitroot\tdg-world\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule H:/gitroot/tdg-world/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"c:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HH:/gitroot/tdg-world -BH:/gitroot/tdg-world --check-stamp-file H:\gitroot\tdg-world\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">H:/gitroot/tdg-world/CMakeLists.txt;H:\gitroot\tdg-world\CMakeLists.txt;H:\gitroot\tdg-world\CMakeFiles\2.8.11.2\CMakeSystem.cmake;H:\gitroot\tdg-world\CMakeFiles\2.8.11.2\CMakeCCompiler.cmake;H:\gitroot\tdg-world\CMakeFiles\2.8.11.2\CMakeCXXCompiler.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;H:\gitroot\tdg-world\CMakeFiles\2.8.11.2\CMakeRCCompiler.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;c:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;H:\gitroot\tdg-world\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">H:\gitroot\tdg-world\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\d976ceda718f37dc84c07f709e4eb0ef\ALL_BUILD.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">H:/gitroot/tdg-world/CMakeFiles/d976ceda718f37dc84c07f709e4eb0ef/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">H:\gitroot\tdg-world\CMakeFiles\ALL_BUILD</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">H:/gitroot/tdg-world/CMakeFiles/d976ceda718f37dc84c07f709e4eb0ef/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">H:\gitroot\tdg-world\CMakeFiles\ALL_BUILD</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ALL_BUILD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="H:/gitroot/tdg-world/ArtLib/ArtLib.vcxproj">
+      <Project>129E56B3-93DC-4473-AA13-B58B5BB8777B</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/GameAI/GameAI.vcxproj">
+      <Project>2F67151D-C0DA-44A3-96FA-44EBE3DC4D86</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/GameLib/GameLib.vcxproj">
+      <Project>7735E96D-AEA2-4F5B-86BB-33D5274950D9</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/MinimalTdG/MinimalTdG.vcxproj">
+      <Project>84E1649D-8D72-4E19-9EDE-A560F5E3EA41</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/ServerLib/ServerLib.vcxproj">
+      <Project>51917743-BC31-4E08-B11A-2D5EC34D2372</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/TourDeGiroCommon/TourDeGiroCommon.vcxproj">
+      <Project>3ABAEE22-FBEE-41A4-AAF3-7DEA326FB5FA</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/TourDeGiroData/TourDeGiroData.vcxproj">
+      <Project>EB4BE9E7-A735-4A73-91D4-5A44F5107A47</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/ZERO_CHECK.vcxproj">
+      <Project>AA551AD4-3C65-436F-9943-79858913E80D</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/libcurl/lib/libcurl.vcxproj">
+      <Project>3D6D9055-B651-4BDF-939D-92DE1CAAA4D3</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/Minixml/minixml.vcxproj">
+      <Project>DEAA6690-A8B5-4CE6-9B88-3234193347D9</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/nedmalloc/nedmalloc.vcxproj">
+      <Project>84BD9781-7A93-488E-B152-3F1C9B58F491</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:/gitroot/tdg-world/zlib-1.2.8/zlib1.vcxproj">
+      <Project>F4652BD5-5C4C-42BB-9936-48EEA8CF43D1</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

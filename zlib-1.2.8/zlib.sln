@@ -1,0 +1,47 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{25423928-D265-4EA8-805F-1805D747DAF1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F4652BD5-5C4C-42BB-9936-48EEA8CF43D1} = {F4652BD5-5C4C-42BB-9936-48EEA8CF43D1}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "INSTALL", "INSTALL.vcxproj", "{07350A16-6AA7-4987-8E4C-25F8C28441E3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{25423928-D265-4EA8-805F-1805D747DAF1} = {25423928-D265-4EA8-805F-1805D747DAF1}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "..\ZERO_CHECK.vcxproj", "{AA551AD4-3C65-436F-9943-79858913E80D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib1", "zlib1.vcxproj", "{F4652BD5-5C4C-42BB-9936-48EEA8CF43D1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AA551AD4-3C65-436F-9943-79858913E80D} = {AA551AD4-3C65-436F-9943-79858913E80D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25423928-D265-4EA8-805F-1805D747DAF1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{25423928-D265-4EA8-805F-1805D747DAF1}.Debug|Win32.Build.0 = Debug|Win32
+		{25423928-D265-4EA8-805F-1805D747DAF1}.Release|Win32.ActiveCfg = Release|Win32
+		{25423928-D265-4EA8-805F-1805D747DAF1}.Release|Win32.Build.0 = Release|Win32
+		{07350A16-6AA7-4987-8E4C-25F8C28441E3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{07350A16-6AA7-4987-8E4C-25F8C28441E3}.Release|Win32.ActiveCfg = Release|Win32
+		{AA551AD4-3C65-436F-9943-79858913E80D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AA551AD4-3C65-436F-9943-79858913E80D}.Debug|Win32.Build.0 = Debug|Win32
+		{AA551AD4-3C65-436F-9943-79858913E80D}.Release|Win32.ActiveCfg = Release|Win32
+		{AA551AD4-3C65-436F-9943-79858913E80D}.Release|Win32.Build.0 = Release|Win32
+		{F4652BD5-5C4C-42BB-9936-48EEA8CF43D1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F4652BD5-5C4C-42BB-9936-48EEA8CF43D1}.Debug|Win32.Build.0 = Debug|Win32
+		{F4652BD5-5C4C-42BB-9936-48EEA8CF43D1}.Release|Win32.ActiveCfg = Release|Win32
+		{F4652BD5-5C4C-42BB-9936-48EEA8CF43D1}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
