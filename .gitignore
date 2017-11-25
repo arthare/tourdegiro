@@ -2,3 +2,6 @@ Debug
 Release
 Win32
 ipch
+*.pch
+*.sdf
+*.opensdf
